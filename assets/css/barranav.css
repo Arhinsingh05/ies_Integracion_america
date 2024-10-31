@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.topheader{
+  box-shadow: 0 4px 5px var(--navbar--shallow-color);
+  position: fixed;
+  background-color: var(--theme-color);
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* logo */
+.logo{
+  display: flex;
+  margin: 0px;
+  /*border: 1px solid red;*/
+  align-items: center;
+  font-weight: 500;
+  color: var(--text-color-nav);
+}
+.logo img{
+  border-radius: 10%;
+}
+
+.navbar{
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  height: 55px;
+  padding: 5px 12px;
+  position: relative;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+nav a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.checkbox, .icons{
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  cursor: pointer;
+} 
+
+.icons{
+  pointer-events: none;
+  /*font-size: 24px;*/
+}
+.checkbox{
+  opacity: 0;
+}
+
+.iconcerrar{
+  display: none;
+}
+.checkbox:checked ~ .iconbarra{
+  display: none;
+}
+.checkbox:checked ~ .iconcerrar{
+  display: block;
+}
+.menu{
+  /*border: 1px solid red;*/
+  width: 200px;
+  position: absolute;
+  top: 54px;
+  right: 0px;
+  display: none;
+}
+.menu li{
+  list-style: none;
+}
+.menu li a{
+  text-decoration: none;
+  color: inherit;
+  background-color: var(--secondary-color);
+  display: block;
+  padding: 10px 12px;
+}
+.menu li a:hover{
+  background-color: var(--menu-mobile-background-color);
+  color: var(--text-color-nav)
+}
+.menu li a.activo {
+  background-color: blue;
+  color:var(--text-color-nav);
+}
+
+.checkbox:checked ~ .menu{
+  display:block;
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+.social-list img {
+  height: 25px;
+}
+.social-list img:hover {
+  filter: drop-shadow(0 0 14px black);
+}
+
+
+.copywrite{
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  height: 30px;
+  padding: 5px 12px;
+  position: relative;
+  margin: 0 auto;
+}
+@media (min-width: 560px){
+  .iconcerrar{
+    display: none;
+  }
+  .checkbox:checked ~ .menu{
+    display: flex;
+  }
+  
+  .checkbox, .icons{
+    display: none;
+  }
+  .menu{
+    top: 0;
+    width: unset;
+    display: flex;
+    height: 55px;
+  }
+  .menu li a{
+    height:55px;
+    padding: 16px 12px 6px;
+  }
+   
+  .social-list img {
+    height: 35px;
+  }
+
+  .copywrite{
+  height: 30px;
+  max-width: 980px;
+}
+}

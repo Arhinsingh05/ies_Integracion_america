@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/img/icono.jpg">
+  <title>IES Integración de las Américas - Alderetes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@700&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/barranav.css">
+  <link rel="stylesheet" href="assets/css/catering.css">
+
+</head>
+
+<body>
+  <header class="topheader">
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <img height=45px width=45px src="assets/img/logo.jpg" alt="logo">
+        <div>
+          IES Integración de las Américas - Alderetes
+        </div>
+      </a>
+      <input class="checkbox" type="checkbox">
+      <img class="icons iconbarra" src="assets/img/bars.svg" alt="abrir menú" />
+      <img class="icons iconcerrar" src="assets/img/xmark.svg" alt="cerrar menú" />
+
+      <ul class="menu">
+        <li><a class="activo" href="index.html">Inicio</a></li>
+        <li><a href="acerca.html">Acerca de nosotros</a></li>
+        <li><a href="perfil.html">Perfil del Egresado</a></li>
+        <li><a href="plan.html">Plan de estudio</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <br>
+
+  <div class="h-padding" class="v-padding">
+    <section class="info">
+      <div class="info-group">
+        <h1 class="info-title">Bienvenidos.</h1>
+        
+        <p class="info-details"><strong>Instituto de Enseñanza Superior</strong></p>
+        <p class="info-details"><strong>"Integración de las Américas"</strong></p>
+        <p class="info-details"><strong>Tecnicatura Superior en Computación y Redes<strong>, <strong>Extensión Áulica Alderetes</strong> </p>
+        <br>
+        
+        <p class="info-details">Nuestra sede está en las instalaciones de la Escuela Nº 110 Gobernador Celedonio Gutiérrez.</p><br>
+        <p class="info-details">Ruta Provincial 304 KM. 9 1/2 - Los Gutierrez</p>
+        <br>
+        
+        <!-- Botón que abre el popup -->
+    <button class="catering-form-submit" onclick="openPopup()">Requisitos para inscripción</button>
+
+    <!-- Contenedor del popup -->
+    <div id="popup" class="popup-overlay">
+        <div class="popup-content">
+            <h2>Documentación necesaria para la inscripción:</h2>
+            <br>
+            <p>1: Fotocopia del DNI.</p>
+            <p>2: Fotocopia de acta de nacimiento.</p>
+            <p>3: Fotocopia del título secundario o constancia de finalización de estudios.</p>
+            <p>4: CUIL.</p>
+            <br>
+            <button class="close-btn" onclick="closePopup()">Cerrar</button>
+        </div>
+    </div>
+        
+      </div>
+      <!-- Slideshow container -->
+      <div class="slide">
+        
+        <br>
+        <div class="slideshow-container">
+          
+    <!-- Asegúrate de que el archivo de video esté en la misma carpeta o usa una ruta relativa o absoluta -->
+    <video width="340" height="450" controls>
+        <source src="/assets/img/video01.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de videos.
+    </video>
+
+          <br>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <nav class="social">
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#" class="social-link"><img src="assets/img/facebook-svgrepo-com.svg" alt="perfil twitter">
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link"><img src="assets/img/twitter-svgrepo-com.svg" alt="perfil twitter">
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class=social-link"><img src="assets/img/instagram-svgrepo-com.svg" alt="perfil youtube">
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link"><img src="assets/img/sharethis-svgrepo-com.svg" alt="perfil github">
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link"><img src="assets/img/whatsapp-svgrepo-com.svg" alt="perfil linkedin">
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    </section>
+  </div>
+
+  <footer class="copywrite">&copy;Rein-Arhin - Todos los Derechos Reservados</footer>
+  <script src="/assets/js/popup.js"></script>
+  
+</body>
+
+</html>

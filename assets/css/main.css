@@ -1,0 +1,44 @@
+:root{
+  --theme-color: white;
+  --primary-color: #005D96;
+  --secondary-color: #87B1CB;
+  --text-color-inverse: white;
+  --text-color: black;
+  --text-color-nav: white;
+  --navbar-shallow-color: #e5e5e5;
+  --menu-mobile-background-color: #3a4460;
+  --third-color: #57ca5b;
+}
+
+body{
+  font-family: 'Monserrat', Sans-Serif;
+  background-color: var(--theme-color);
+  color: var(--text-color);
+  padding-top: 70px;
+}
+/*
+a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+*/
+
+.h-padding{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.v-padding{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+@media(min-width: 950px){
+.h-padding{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.v-padding{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+}
