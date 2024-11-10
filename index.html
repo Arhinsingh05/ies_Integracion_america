@@ -37,7 +37,7 @@
         <li><a class="activo" href="index.html">Inicio</a></li>
         <li><a href="acerca.html">Acerca de Nosotros</a></li>
         <li><a href="perfil.html">Perfil del Egresado</a></li>
-        <li><a href="plan.html">Plan de estudio</a></li>
+        <li><a href="plan.html">Plan de Estudio</a></li>
         <li><a href="contact.html">Contacto</a></li>
       </ul>
     </nav>
@@ -75,6 +75,16 @@
             <button class="close-btn" onclick="closePopup()">Cerrar</button>
         </div>
     </div>
+    <!-- Contenedor del popup -->
+    <div id="popup-mapa" class="popup-overlay">
+      <div class="popup-content">
+          <h2>Nuestra Ubicación:</h2>
+          <br>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d445.15487338901625!2d-65.137531!3d-26.800518!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225f004cc50721%3A0x935a0815a6de20b2!2sIES%20Integraci%C3%B3n%20De%20Las%20Am%C3%A9ricas!5e0!3m2!1ses!2sus!4v1731254318291!5m2!1ses!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <br>
+          <button class="close-btn" onclick="closePopupMapa()">Cerrar</button>
+      </div>
+  </div>
         
       </div>
       <!-- Slideshow container -->
@@ -97,7 +107,7 @@
       <nav class="social">
         <ul class="social-list">
           <li class="social-item">
-            <a href="#" class="social-link"><img src="assets/img/facebook-svgrepo-com.svg" alt="perfil twitter">
+            <a href="#" class="social-link" onclick="openPopupMapa()"><img src="assets/img/mapas-de-google-144.svg" alt="perfil mapas">
             </a>
           </li>
 
