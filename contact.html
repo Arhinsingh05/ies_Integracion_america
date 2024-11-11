@@ -71,7 +71,7 @@
         </div>
       </div>
 
-      <form class="catering-form">
+      <form action="mailto:iesalderetes5@gmail.com" method="GET" class="catering-form">
         <div class="catering-form-group">
           <label for="name">Nombre:</label>
           <input required type="text" name="name" id="name">
@@ -84,7 +84,7 @@
           <label for="message">Mensaje:</label>
           <textarea required name="message" id="message" rows="6"> </textarea>
         </div>
-        <button type="submit" class="catering-form-submit">Enviar</button>
+        <button type="submit" onclick="sendMail()" class="catering-form-submit">Enviar</button>
       </form>
 
     </section>
