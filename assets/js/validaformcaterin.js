@@ -31,5 +31,5 @@ function sendMail() {
   window.location.href = mailtoLink;
 
   // Limpia el formulario después de abrir el cliente de correo
-  document.getElementById("contactForm").reset();
+  //document.getElementById("contactForm").reset();
 }
