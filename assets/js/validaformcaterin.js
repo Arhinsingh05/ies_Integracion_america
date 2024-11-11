@@ -29,4 +29,7 @@ function sendMail() {
   const mailtoLink = `mailto:iesalderetes5@gmail.com?subject=Nuevo%20mensaje%20de%20${encodeURIComponent(name)}&body=Nombre:%20${encodeURIComponent(name)}%0ACorreo:%20${encodeURIComponent(email)}%0AMensaje:%20${encodeURIComponent(message)}`;
   
   window.location.href = mailtoLink;
+
+  // Limpia el formulario después de abrir el cliente de correo
+  document.getElementById("contactForm").reset();
 }
