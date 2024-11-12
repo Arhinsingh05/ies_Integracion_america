@@ -10,6 +10,7 @@
   display: none; /* Inicialmente oculto */
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 /* Estilos para el contenido del popup */
@@ -227,6 +228,12 @@
   filter: drop-shadow(0 0 14px black);
 }
 
+.imagen {
+  width: 100%; /* o 90% para darle un margen */
+  height: auto;
+  max-width: 600px; /* limita el tamaño en pantallas grandes */
+}
+
 @media (min-width: 950px) {
   .info {
     text-align: left;
@@ -240,7 +247,7 @@
   .catering {
     font-size: 20px;
     padding: 70px;
-    max-width: 980px;
+    max-width: 950px;
     margin: 0 auto;
     box-sizing: border-box;
   }
@@ -278,4 +285,9 @@
       1fr 1fr;
     align-items: center;
   }
+  .imagen {
+    width: 480px;
+    height: 320px;
+  }
+
 }
