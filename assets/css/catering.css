@@ -232,6 +232,7 @@
   width: 100%; /* o 90% para darle un margen */
   height: auto;
   max-width: 600px; /* limita el tamaño en pantallas grandes */
+  border-radius: 20px;
 }
 
 @media (min-width: 950px) {
@@ -286,7 +287,7 @@
     align-items: center;
   }
   .imagen {
-    width: 480px;
+    width: 460px;
     height: 320px;
   }
 

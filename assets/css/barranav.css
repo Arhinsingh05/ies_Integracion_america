@@ -119,7 +119,7 @@ nav a{
   border: 1px solid black;
   justify-content: space-between;
   background-color: var(--primary-color);
-  height: 30px;
+  height: 50px;
   padding: 5px 12px;
   position: relative;
   margin: 0 auto;
