@@ -2,254 +2,134 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ReinArhiN</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom right, #f0f0f0, #ffffff);
-    }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/img/icono.jpg">
+  <title>IES Integración de las Américas - Alderetes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@700&display=swap"
+    rel="stylesheet">
 
-    header {
-      background: #3b5998;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-      animation: fadeIn 2s;
-    }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/barranav.css">
+  <link rel="stylesheet" href="assets/css/catering.css">
 
-    nav {
-      background: #333;
-      overflow: hidden;
-    }
-
-    nav .menu {
-      display: flex;
-      flex-direction: column;
-      background-color: #333;
-      display: none;
-    }
-
-    nav .menu a {
-      color: white;
-      padding: 1rem;
-      text-decoration: none;
-      text-align: center;
-    }
-
-    nav .menu a:hover {
-      background-color: #575757;
-    }
-
-    nav .hamburger {
-      background: #333;
-      color: white;
-      padding: 1rem;
-      cursor: pointer;
-      text-align: right;
-    }
-
-    main {
-      padding: 2rem;
-      text-align: center;
-    }
-
-    form {
-      max-width: 500px;
-      margin: 2rem auto;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    input, textarea {
-      padding: 0.5rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    input[type="submit"] {
-      background-color: #3b5998;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-
-    input[type="submit"]:hover {
-      background-color: #2d4373;
-    }
-
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-
-    .social-icons a {
-      color: #3b5998;
-      font-size: 2rem;
-    }
-
-    footer {
-      background-color: #3b5998;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-      margin-top: 2rem;
-    }
-
-    @media(min-width: 600px) {
-      nav .menu {
-        flex-direction: row;
-        justify-content: center;
-        display: flex;
-      }
-
-      nav .hamburger {
-        display: none;
-      }
-    }
-  </style>
 </head>
 
 <body>
-  <header>
-    <img src="asset/logo.jpg" alt="Logo ReinArhiN" style="max-width: 150px; animation: fadeIn 2s;">
-    <h1>ReinArhiN</h1>
-    <h2>Creamos tu Página Web</h2>
+  <header class="topheader">
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <img height=45px width=45px src="assets/img/logo.jpg" alt="logo">
+        <div>
+          IES Integración de las Américas
+          <br> - Alderetes
+        </div>
+      </a>
+      <input class="checkbox" type="checkbox">
+      <img class="icons iconbarra" src="assets/img/bars.svg" alt="abrir menú" />
+      <img class="icons iconcerrar" src="assets/img/xmark.svg" alt="cerrar menú" />
+
+      <ul class="menu">
+        <li><a class="activo" href="index.html">Inicio</a></li>
+        <li><a href="acerca.html">Acerca de Nosotros</a></li>
+        <li><a href="perfil.html">Perfil del Egresado</a></li>
+        <li><a href="plan.html">Plan de Estudio</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <div class="hamburger" onclick="toggleMenu()">☰ Menú</div>
-    <div class="menu" id="menu">
-      <a href="#inicio">Inicio</a>
-      <a href="#quienes_somos">Quiénes somos</a>
-      <a href="#objetivos">Objetivos</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#contacto">Contacto</a>
-    </div>
-  </nav>
+  <br>
 
-  <main>
-    <section id="inicio">
-        <h2>Bienvenidos</h2>
-        <p>
-            Bienvenidos a nuestro espacio digital, donde la creatividad y la tecnología se encuentran para dar vida a páginas web únicas, funcionales y con identidad propia. Somos una pareja apasionada por el diseño y el desarrollo web, en constante formación y evolución en el mundo de la informática. Si estás buscando una página que refleje tu esencia, tu emprendimiento o tu proyecto, llegaste al lugar indicado.
-        </p>
-    </section>
-    <section id="quienes_somos">
-        <h2>Quienes Somos</h2>
-        <p>Somos María y [nombre de tu esposo], una pareja con base en Tucumán y formación en Buenos Aires, donde nos capacitamos profesionalmente en programación y desarrollo con Python. Nuestra pasión por la informática nos llevó a especializarnos en la creación de páginas web personalizadas, adaptadas a las necesidades de cada cliente. Nos mueve la vocación de construir espacios digitales que transmitan confianza, modernidad y funcionalidad. Más que un servicio, ofrecemos compromiso, dedicación y diseño con alma.
-        </p>
-    </section>
-    <section id="objetivos">
-        <h2>Misión</h2>
-        <P>
-            Nuestro misión principal es brindar soluciones digitales accesibles, creativas y eficientes para personas, emprendimientos y pequeñas empresas que necesiten presencia online. Queremos:
-
-Diseñar páginas web modernas y funcionales que se adapten a cada necesidad.
-
-Brindar asesoramiento personalizado desde la idea hasta la publicación del sitio.
-
-Seguir capacitándonos en nuevas tecnologías para ofrecer siempre lo mejor.
-
-        </P>
-    </section>
-    <section id="servicios">
-        <h2>Servicios</h2>
-        <p>
-            SERVICIOS
-
-Ofrecemos un servicio integral de creación de páginas web, pensado para emprendedores, profesionales y pequeñas empresas que quieren destacarse en el mundo digital. Nos adaptamos a tu estilo, necesidad y presupuesto.
-Nuestros servicios incluyen:
-
-Diseño y desarrollo web personalizado: Sitios modernos, responsivos y funcionales.
-
-Optimización para dispositivos móviles: Navegación fluida desde cualquier pantalla.
-
-Asesoramiento y acompañamiento técnico: Te guiamos paso a paso en todo el proceso.
-
-Mantenimiento y actualizaciones: Nos ocupamos de que tu web esté siempre al día.
-
-Diseño de identidad visual digital: Colores, tipografías y estilo acorde a tu marca.
-
-Integración con redes sociales y contacto directo: Para que estés siempre conectado con tus clientes.
-
-        </p>
+  <div class="h-padding" class="v-padding">
+    <section class="info">
+      <div class="info-group">
+        <h1 class="info-title">Bienvenidos.</h1>
+        <p class="info-details"><strong>Instituto de Enseñanza Superior</strong></p>
+        <p class="info-details"><strong>"Integración de las Américas"</strong></p>
+        <p class="info-details"><strong>Tecnicatura Superior en Computación y Redes<strong>, <strong>Extensión Áulica Alderetes</strong> </p>
         <br>
-        <h2>Muestrario de Servivios</h2><br>
-        <p>Aquí tiene algunos modelos de Nuestras páginas</p>
-<lu>
-    <p><a href="https://arhinsingh05.github.io/Academia-de-Aprendizaje/">Academia</a></p><br>
+        
+        <p class="info-details">Nuestra sede está en las instalaciones de la Escuela Nº 110 Gobernador Celedonio Gutiérrez.</p><br>
+        <p class="info-details">Ruta Provincial 304 KM. 9 1/2 - Los Gutierrez</p>
+        <br>
+        
+        <!-- Botón que abre el popup -->
+    <button class="catering-form-submit" onclick="openPopup()">Requisitos para inscripción</button>
 
-    <p><a href="https://arhinsingh05.github.io/ies_Integracion_america/">IES</a></p><br>
-       
-    <p><a href= "https://arhinsingh05.github.io/ATerapeutico/">Acompañante Terapéutico</a></p><br>
-       
-    <p><a href="https://arhinsingh05.github.io/juegodelamigosecreto/">Amigo Invisible</a></p> <br>
-       
-    <p><a href="https://arhinsingh05.github.io/cetcr/">Centro de Estudiantes</a></p><br>
-    <p><a href="https://arhinsingh05.github.io/Sindicato/">Sindicato</a></p><br>
-       
-    <p><a href="https://arhinsingh05.github.io/My-Portfolio/">Mi Portafolio-Arhin</a></p><br>
-    <p><a href="https://aldo21496.github.io/comidas/">Restaurant</a></p><br>
-
-    <p><a href="https://aldo21496.github.io/proyecto-final-CV/">Curriculum</a></p><br>
-
-    <p><a href="https://aldo21496.github.io/juego_amigo_secreto/">Amigo Secreto</a></p><br>
-            
-    <p><a href="https://aldo21496.github.io/Mi_portafolio/">Portafolio-Aldo</a></p><br>
-</lu>
-    </section>
-
-
-
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <form onsubmit="return validarFormulario()" action="mailto:cetcr.ies@gmail.com" method="POST" enctype="text/plain">
-        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-        <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
-        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
-        <input type="submit" value="Enviar">
-      </form>
-
-      <div class="social-icons">
- 
-        <a href="mailto:reinarhin5@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://wa.me/5493815995591?textMe%20Hola%20a%20%la%20brevedad%20respondere%20su%20consulta%20" target="_blank"><img src="icons8-whatsapp-144.svg" width="40px"></a>
+    <!-- Contenedor del popup -->
+    <div id="popup" class="popup-overlay">
+        <div class="popup-content">
+            <h2>Documentación necesaria para la inscripción:</h2>
+            <br>
+            <p>1: Fotocopia del DNI.</p>
+            <p>2: Fotocopia de acta de nacimiento.</p>
+            <p>3: Fotocopia del título secundario o constancia de finalización de estudios.</p>
+            <p>4: Constancia de CUIL.</p>
+            <br>
+            <button class="close-btn" onclick="closePopup()">Cerrar</button>
+        </div>
+    </div>
+        
       </div>
+      <!-- Slideshow container -->
+      <div class="slide">
+        <br>
+        <div class="slideshow-container">
+          <video width="340" height="450" controls>
+            <source src="assets/img/video01.mp4" type="video/mp4">
+          </video>
+        <br>
+        </div>
+      </div>
+
+    <!-- Contenedor del popup -->
+    <div id="popup-mapa" class="popup-overlay">
+      <div class="popup-content">
+          <h2>Nuestra Ubicación:</h2>
+          <br>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d445.15487338901625!2d-65.137531!3d-26.800518!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225f004cc50721%3A0x935a0815a6de20b2!2sIES%20Integraci%C3%B3n%20De%20Las%20Am%C3%A9ricas!5e0!3m2!1ses!2sus!4v1731254318291!5m2!1ses!2sus" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <br>
+          <button class="close-btn" onclick="closePopupMapa()">Cerrar</button>
+      </div>
+    </div>
+
     </section>
-  </main>
 
-  <footer>
-    @ReinArhiN - Reservados todos los derechos
-  </footer>
 
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('menu');
-      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-    }
+    <section>
+      <nav class="social">
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#" class="social-link" onclick="openPopupMapa()"><img src="assets/img/mapas-de-google-144.svg" alt="perfil mapas">
+            </a>
+          </li>
 
-    function validarFormulario() {
-      const email = document.getElementById('email').value;
-      const regex = /^\S+@\S+\.\S+$/;
-      if (!regex.test(email)) {
-        alert("Por favor, ingresa un correo válido.");
-        return false;
-      }
-      return true;
-    }
-  </script>
+          <li class="social-item">
+            <a href="#" class="social-link"><img src="assets/img/icons8-twitter-144.svg" alt="perfil twitter">
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/ies_integracion_america.ald?igsh=YzljYTk1ODg3Zg==" class=social-link"><img src="assets/img/icons8-instagram-144.svg" alt="perfil youtube">
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://wa.me/5493815730725?textMe%20Hola%20a%20%la%20brevedad%20respondere%20su%20consulta%20" class="social-link"><img src="assets/img/icons8-whatsapp-144.svg" alt="perfil linkedin">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </div>
+
+  <footer class="copywrite">&copy;Rein-Arhin - Todos los Derechos Reservados</footer>
+  <script src="assets/js/popup.js"></script>
 </body>
 
 </html>
